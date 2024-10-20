@@ -3,8 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Spotify clone</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="icon" href="assets/images/Spotify_Primary_Logo_RGB_Green.png">
 </head>
 <body>
-
+    <div id="app" class="d-flex flex-column">
+        <div id="principal" class="d-flex">
+            <nav id="leftNav" class="w-100 pt-4 d-flex flex-column">
+                <a href="index.html" class="d-flex px-4">
+                    <img src="assets/images/Spotify_Primary_Logo_RGB_Green.png" alt="Logo spotify" width="50" height="50">
+                </a>
+                <ul class="nav flex-column px-2 my-4">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link active">
+                            <i class="bi bi-bank"></i>
+                            Home
+                        </a>
+                        <a href="/" class="nav-link">
+                            <i class="bi bi-search"></i>
+                            Search
+                        </a>
+                        <a href="/" class="nav-link">
+                            <i class="bi bi-align-start"></i>
+                            Your library
+                        </a>
+                    </li>
+                    <li id="liste">
+                        <button>
+                            <span class="btn_plus">
+                                <i class="bi bi-plus"></i>
+                                Create playlist
+                            </span>
+                        </button>
+                        <button>
+                            <span class="btn_heart">
+                                <span class="bi bi-heart"></span>
+                                Liked songs
+                            </span>
+                        </button>
+                    </li>
+                    <hr class="mx-4 mb-0 mt-2">
+                    <a href="#" class="d-block px-4 py-2 installApp">
+                        Log out
+                    </a>
+                    <a href="#" class="installApp d-block px-4 py-2">
+                        <i class="bi bi-download"></i>
+                        Install app
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div id="footer"></div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

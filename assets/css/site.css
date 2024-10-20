@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#app,
+#principal{
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+#app{
+    min-width: 767px;
+    overflow-x: auto;
+}
+
+#principal{
+    background-color: #474235;
+    transition:  background-color 1s ease;
+    color: #fff;
+}
+
+#principal #leftNav{
+    max-width: 246px;
+    background-color: #0a0a0a;
+}
+#principal #leftNav a{
+    text-decoration: none;
+    color: white;
+}
+
+#principal #leftNav .nav .nav-item .nav-link{
+    color: #ffffff;
+    fill: #ffffff;
+    font-size: 0.9em;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+#principal #leftNav .nav .nav-item .nav-link .bi {
+    margin-right: 14px;
+}
+
+#principal #leftNav .nav .nav-item .nav-link.active,
+#principal #leftNav .nav .nav-item .nav-link.active:hover {
+    opacity: 1;
+}
+
+#principal #leftNav #liste button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    display: flex;
+    color: #fff;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    padding: 8px 24px;
+    width: 100%;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+#principal #leftNav #liste button .btn_plus,
+#principal #leftNav #liste button .btn_heart {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#principal #leftNav #liste button .btn_plus .bi{
+    background-color: #fff;
+}
+#principal #leftNav #liste button .btn_heart .bi{
+    background: linear-gradient(125deg, #773de3 41%, #cffff1 100%);
+}
+
+#principal #leftNav #liste button .btn_heart button:hover{
+    opacity: 1;
+}
+#principal #leftNav .installApp{
+    fill: #fff;
+    font-size: 0.9em;
+    font-weight: 500;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+#principal #leftNav .installApp .bi{
+    margin-right: 15px;
+}
+#principal #leftNav .installApp:hover{
+    opacity: 1;
+}
